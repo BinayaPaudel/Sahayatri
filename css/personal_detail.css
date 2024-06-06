@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{                                                 
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.container .heading{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #EF4870;
+}
+
+
+.form input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form select{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+form input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+form .next{
+    background: #EF4870;
+    color: #FDFDFD;
+    font-size: 20px;
+}
+
+form .back{
+    color: #EF4870;
+    margin-bottom: 10px;
+}
+
+
+
+.select-menu{
+    width: 396px
+}
+
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    /* position: relative; */
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #FDFDFD;
+    /* to hide the options */
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 25px;
+    align-items: center;
+    background: #FDFDFD;
+    justify-content: center;
+}
+.options {
+    position:  absolute;
+    z-index: 1;
+    width: 396px;
+}
+
+.options .option:hover{
+    background: #F37694;
+    color: #FDFDFD;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+
+/* .select-menu .text{
+    opacity: 60%;
+} */
+
+.select-menu .select-btn .bx{
+    opacity: 50%;
+    color: #F37694;
+}
+
+.select-menu .select-btn .initial-text{
+    color: #AEABAB;
+    user-select: none;
+}
+
+::placeholder{
+    color: #AEABAB;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.options{
+    position: absolute;
+    height: 200px;
+    user-select: none;
+    overflow-y: scroll;
+    border-radius: 30px;
+}

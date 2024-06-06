@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{                                                 
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 20px;
+    background: #FDFDFD;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.container .heading{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #EF4870;
+}
+
+.container p{
+    width: 345px;
+    height: 54px;
+    left: 42px;
+    top: 136px;
+
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+form input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+form .next{
+    background: #EF4870;
+    color: #FDFDFD;
+    font-size: 20px;
+}
+
+form .back{
+    color: #EF4870;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* interests css */
+
+.interests{
+    display: flex;
+    flex-wrap: wrap;
+    width: 396px;
+}
+
+.interests div{
+    margin-top: 19px;
+    margin-bottom: 9px;
+    flex-basis: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.interests label{
+    cursor: pointer;
+}
+
+.interests label input[type="checkbox"]{
+    display: none;
+}
+
+.interests div label span{
+    /* when unchecked */
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(203, 203, 203, 0.5);
+    color: #EF4870;
+    padding: 16px;
+    border-radius: 16px;
+
+    display: flex;
+
+    /* justify-content: flex-start; */
+    padding: 9px 13px;
+    gap: 13px;
+
+    height: 45px;
+    width: 186px;
+    /* to push left  */
+    align-items: center;
+}
+
+/* after being checked */
+
+.interests div label input[type="checkbox"]:checked ~ span{
+    background: #EF4870;
+    color: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(239, 72, 112, 0.3);
+}
+
+.interests{
+    user-select: none;
+}
+
+
+
+

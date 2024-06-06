@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <script src="/js/select_gender.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/img/signup.png" class="signup_pic" />
+      <div class="heading">Sign Up</div>
+      <div class="form">
+        <input type="name" name="name" placeholder="Name" required />
+        <input type="tel" name="phone" inputmode="numeric" placeholder="Phone" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+
+        <div class="select-menu">
+          <div class="select-btn">
+            <span class="text"
+              ><span class="initial-text">Select Your Gender</span></span
+            >
+            <i class="bx bx-chevron-down"></i>
+          </div>
+
+          <ul class="options">
+            <li class="option">
+              <span class="option-text">Male</span>
+            </li>
+            <li class="option">
+              <span class="option-text">Female</span>
+            </li>
+            <li class="option">
+              <span class="option-text">Others</span>
+            </li>
+          </ul>
+        </div>
+
+        <form action="/html/verification.html">
+          <input type="submit" value="Signup" class="signup" />
+        </form>
+      </div>
+
+      <p class="bottom-text">
+        By clicking the Sign Up button, you agree to our
+        <a href="#">Terms & Conditions</a> &
+        <a href="#">Privacy Policy</a>
+      </p>
+
+      <footer>
+        <p>
+          Already have an account? <a href="/html/login.html">Login Here</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

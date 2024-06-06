@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FDFDFD;
+    font-family: 'Rubik';
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container img{
+   /*  width: 100%;
+    height: 100%;
+    margin: auto;  */
+    margin-top: 10px;
+}
+
+.container .heading{
+    color: #EF4870;
+    /* width: 100%;
+    height: 47px;
+    left: 103px;
+    top: 420px; */
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    margin: 16px;
+
+    /* Heading/2 */
+
+    /* font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    display: flex;
+    align-items: center; */
+
+}
+
+.container .text{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.container .text span{
+    color: #EF4870;
+}
+
+.otpfield input {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    outline: none;
+    text-align: center;
+    font-size: 1.125rem;
+    margin: 10px 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+form .otpfield {
+    column-gap: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+form .otpfield input{
+    border: 1px solid #EF4870;
+}
+
+.back{
+    margin-bottom: 10px;
+}
+
+.otpfield input::-webkit-inner-spin-button,
+.otpfield input::-webkit-outer-spin-button {
+  display: none;
+}
+
+form button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+    color: #EF4870;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+  }
+
+  form .verify{
+    color: #FDFDFD;
+    background: #F37694;
+  }
+
+  form button.active {
+    background: #EF4870;
+    pointer-events: auto;
+  }

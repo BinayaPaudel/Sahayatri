@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FDFDFD;
+    font-family: 'Rubik';
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.form input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.container .heading{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #EF4870;
+}
+
+form input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    gap: 10px;
+    margin-top: 16px;
+
+    width: 396px;
+    height: 52px;
+
+    background: #FDFDFD;
+
+    border: 1px solid #EF4870;
+    border-radius: 25px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    outline: none;
+}
+
+form .login{
+    background: #EF4870;
+    color: #FDFDFD;
+    margin-bottom: 16px;
+}
+
+.text3 a{
+    text-decoration: none;
+    color: #EF4870;
+}
+
+.text3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+::placeholder{
+    color: #AEABAB;
+    font-size: 16px;
+    font-weight: 400;
+}
